@@ -1,2 +1,2 @@
-# GrapeJordison.github.io
+http://GrapeJordison.github.io
 My personal website
