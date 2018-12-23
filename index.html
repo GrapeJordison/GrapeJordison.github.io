@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<head>
 <title>Marina Rodrigues</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,24 +10,25 @@
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 a{text-decoration:none; outline: none;}
+#EN {display:none;}
+#BR1 {display:none;}
+#EN1,#BR1{display: block; float:right; position:fixed; }
 </style>
-<script>
-  function myFunction() {
-    document.getElementById("w3").style.display = "none";
-    document.getElementById("English").style.display = "block";
-  }
-</script>
+</head>
 <body class="w3-light-grey">
-
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+  <span id="EN1" class="w3-button w3-black w3-display-topright w3-text-white" onclick="myFunction()"> Translate EN </span>
+<!-- Page Container in Portuguese -->
+<div id="BR">
+  <!-- Page Container -->
+  <div class="w3-content w3-margin-top" style="max-width:1400px;">
   <!-- The Grid -->
-  <div class="w3-row-padding">
+    <div class="w3-row-padding">
+
     <!-- Left Column -->
     <div class="w3-third">
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
-          <img src="https://raw.githubusercontent.com/GrapeJordison/GrapeJordison.github.io/master/Avatar.jpg" style="width:100%" alt="Avatar">
+          <img src="/run/media/grape/_backup/grape/Programing/html e css/Curriculum Vitae/images/Avatar.jpg" style="width:100%" alt="Avatar">
           <div class="w3-display-bottomleft w3-container w3-text-white">
             <h2>Marina Rodrigues</h2>
           </div>
@@ -35,7 +37,7 @@ a{text-decoration:none; outline: none;}
           <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-black"></i>Analista de qualidade / Suporte técnico</p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-black"></i>Brasil, SP, São Paulo</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-black"></i>marinaragsa@gmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-black"></i>55 11 9 50893 361</p>
+          <p><i class="fa fa-paper-plane fa-fw w3-margin-right w3-large w3-text-black"></i><a href="https://t.me/GrapeJordison" target="_blank">t.me/GrapeJordison</a></p>
 
           <hr>
 
@@ -89,10 +91,8 @@ a{text-decoration:none; outline: none;}
 
     <!-- Right Column -->
     <div class="w3-twothird">
-        
-
       <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <button class="w3-button w3-black w3-display-topright w3-text-white" onclick="English()"> Click to view in English </button>
+
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Experiências</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Analista de qualidade / <a href="https://mutantbr.com/" target="_blank"> MUTANT BR</a></b></h5>
@@ -111,8 +111,165 @@ a{text-decoration:none; outline: none;}
           <h5 class="w3-opacity"><b>Operador de atendimento Híbrido / Grupo Unite</b></h5>
           <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - Jun 2015</h6>
           <p> • Atendimento via telefone, chat, e-mail, redes sociais e whatsapp ao candidato ou aluno para auxílo em dúvidas referente a pós graduação do Hospital Albert Einstein.<br>
-• Acompanhamento da agenda de entrevistas,comunicação com o médico entrevistador e o candidato a vaga.<br>
-• Entrar em contato com os desistentes, questionando o motivo e tentando reverter a situação.<br>
+          • Acompanhamento da agenda de entrevistas,comunicação com o médico entrevistador e o candidato a vaga.<br>
+          • Entrar em contato com os desistentes, questionando o motivo e tentando reverter a situação.<br>
+          <br>
+          Principais resultados: Média de retenção 70% dos contatos diários recebidos, beneficiando-se da variável.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Operador de atendimento receptivo / Contax (LIQ)</b></h5>
+          <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2014 - Dez 2014</h6>
+          <p>• Prestar informações, registrar sugestões e reclamações sobre seguros do Santander.<br>
+          • Reverter a situação em que o cliente deseja o cancelamento do serviço.<br>
+          • Suporte aos usuários de internet banking, tanto mobile quanto web.<br>
+          <br>
+          Principais resultados: Média de retenção 50% dos contatos diários recebidos, beneficiando-se da variável.
+          </p><br>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Formação</h2>
+        <div class="w3-container">
+          <a href="https://www.w3schools.com/" target="_blank"><h5 class="w3-opacity"><b>W3Schools.com</b></h5></a>
+          <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Para sempre</h6>
+          <p>Desenvolvimento Web! Tudo que eu preciso saber em um só lugar.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Universidade Nove de Julho</b></h5>
+          <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2020</h6>
+          <p> Análise e desenvolvimento de sistemas.</p>
+          <hr>
+        </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Colégio Sir Isaac Newtoon</b></h5>
+            <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
+            <p>Ensino médio técnico em Front-end Development (HTML, CSS, PHP, MySQL - básico).</p><br>
+          </div>
+      </div>
+        <!-- End Right Column -->
+        </div>
+
+    <!-- End Grid -->
+    </div>
+
+  <!-- End Page Container -->
+  </div>
+
+  <footer class="w3-container w3-black w3-center w3-margin-top">
+  <p>Me encontre nas redes sociais.</p>
+  <a href="https://bit.ly/2Fgi9rg" target="_blank"><i class="fa fa-linkedin w3-hover-opacity" ></i></a>
+
+
+  <!--<i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>-->
+  </footer>
+<!-- End Page Container in Portuguese -->
+</div>
+
+<!-- Page Container in English -->
+<div id="EN">
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+
+    <!-- Left Column -->
+    <div class="w3-third">
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="/run/media/grape/_backup/grape/Programing/html e css/Curriculum Vitae/images/Avatar.jpg" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-white">
+            <h2>Marina Rodrigues</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-black"></i>Quality Analyst / Technical support</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-black"></i>Brazil, SP, São Paulo</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-black"></i>marinaragsa@gmail.com</p>
+          <p><i class="fa fa-paper-plane fa-fw w3-margin-right w3-large w3-text-black"></i><a href="https://t.me/GrapeJordison" target="_blank">t.me/GrapeJordison</a></p>
+
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-black"></i>Skills</b></p>
+          <p>Windows, Linux</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:70%">70%</div>
+          </div>
+          <p>Office pack</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:80%">
+              <div class="w3-center w3-text-white">80%</div>
+            </div>
+          </div>
+          <p>Communication</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:70%">70%</div>
+          </div>
+          <p>PHP, HTML, CSS</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:80%">80%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-black"></i>Idiomas</b></p>
+          <p>English</p>
+          <p class="w3-small">Conversation</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:50%">50%</div>
+          </div>
+          <p class="w3-small">Reading</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:80%">80%</div>
+          </div>
+          <p class="w3-small">Writing</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:75%">75%</div>
+          </div>
+        <br>
+        <p class="w3-large w3-text-theme"><b><i class="fa fa-list-alt fa-fw w3-margin-right w3-text-black"></i>
+        Speeches</b></p>
+          <h5 class="w3-opacity"><b>MUTANT BR</b></h5>
+          <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>5 Days</h6>
+          <p>Course “Customer Experience – The Art of Enchanting the Customer”</p>
+
+
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+<span id="BR1" class="w3-button w3-black w3-display-topright w3-text-white" onclick="myFunction1()"> Traduzir PT-BR </span>
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Quality Analyst / <a href="https://mutantbr.com/" target="_blank"> MUTANT BR</a></b></h5>
+
+
+          <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2015 - Aug 2018</h6>
+          <p>• Conduct of monitoring and action in the strategic planning of actions aimed at improving the performance of agents; <br>
+• Elaboration of action plans to improve the performance of the operation; <br>
+• Participate in and conduct internal audits to prevent fraud, ensuring process quality and credibility; <br>
+<br>
+Main results: Creation of fraud identification worksheet in the cancellation of the service.
+</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Operador de atendimento Híbrido / Grupo Unite</b></h5>
+          <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - Jun 2015</h6>
+          <p>-Atendimento via telefone, chat, e-mail, redes sociais e whatsapp ao candidato ou aluno para auxílo em dúvidas referente a pós graduação do Hospital Albert Einstein.<br>
+- Acompanhamento da agendas de entrevistas e comunicação com o médico entrevistador e candidato a vaga.<br>
+- Entrar em contato com os desistentes, questionando o motivo e tentando reverter a situação.<br>
 <br>
 Principais resultados: Média de retenção 70% dos contatos diários recebidos, beneficiando-se da variável.</p>
           <hr>
@@ -120,9 +277,9 @@ Principais resultados: Média de retenção 70% dos contatos diários recebidos,
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Operador de atendimento receptivo / Contax (LIQ)</b></h5>
           <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2014 - Dez 2014</h6>
-          <p>• Prestar informações, registrar sugestões e reclamações sobre seguros do Santander.<br>
-• Reverter a situação em que o cliente deseja o cancelamento do serviço.<br>
-• Suporte aos usuários de internet banking, tanto mobile quanto web.<br>
+          <p>- Prestar informações, registrar sugestões e reclamações sobre seguros do Santander.<br>
+- Reverter a situação em que o cliente deseja o cancelamento do serviço.<br>
+- Suporte aos usuários de internet banking, tanto mobile quanto web.<br>
 <br>
 Principais resultados: Média de retenção 50% dos contatos diários recebidos, beneficiando-se da variável.
           </p><br>
@@ -130,7 +287,7 @@ Principais resultados: Média de retenção 50% dos contatos diários recebidos,
       </div>
 
       <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Formação</h2>
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Education</h2>
         <div class="w3-container">
           <a href="https://www.w3schools.com/" target="_blank"><h5 class="w3-opacity"><b>W3Schools.com</b></h5></a>
           <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
@@ -148,6 +305,7 @@ Principais resultados: Média de retenção 50% dos contatos diários recebidos,
           <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
           <p>Ensino médio técnico em Front-end Development (HTML, CSS, PHP, MySQL - básico).</p><br>
         </div>
+      </div>
   <!-- End Right Column -->
     </div>
 
@@ -157,7 +315,8 @@ Principais resultados: Média de retenção 50% dos contatos diários recebidos,
   <!-- End Page Container -->
 </div>
 
-<footer class="w3-container w3-black w3-center w3-margin-top">
+
+  <footer class="w3-container w3-black w3-center w3-margin-top">
   <p>Find me on social media.</p>
   <a href="https://bit.ly/2Fgi9rg" target="_blank"><i class="fa fa-linkedin w3-hover-opacity" ></i></a>
 
@@ -168,7 +327,24 @@ Principais resultados: Média de retenção 50% dos contatos diários recebidos,
   <i class="fa fa-pinterest-p w3-hover-opacity"></i>
   <i class="fa fa-twitter w3-hover-opacity"></i>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>-->
-</footer>
+  </footer>
+<!-- End Page Container in English -->
+</div>
+
+<script>
+  function myFunction() {
+    document.getElementById("BR").style.display = "none";
+    document.getElementById("EN").style.display = "block";
+    document.getElementById("EN1").style.display = "none";
+    document.getElementById("BR1").style.display = "block";
+  }
+  function myFunction1() {
+    document.getElementById("BR").style.display = "block";
+    document.getElementById("EN").style.display = "none";
+    document.getElementById("EN1").style.display = "block";
+    document.getElementById("BR1").style.display = "none";
+  }
+</script>
 
 </body>
 </html>
